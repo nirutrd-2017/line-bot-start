@@ -95,8 +95,8 @@ else if($arrJson['events'][0]['message']['text'] == "location"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "image";
-  $arrPostData['messages'][0]['originalContentUrl'] = "https://github.com/nirutrd-2017/line-bot-start/blob/master/10logob.png";
-  $arrPostData['messages'][0]['previewImageUrl'] = "https://github.com/nirutrd-2017/line-bot-start/blob/master/10logob.png";
+  $arrPostData['messages'][0]['originalContentUrl'] = "https://obscure-temple-94872.herokuapp.com/10logob.png";
+  $arrPostData['messages'][0]['previewImageUrl'] = "https://obscure-temple-94872.herokuapp.com/10logob.png";
 
 
 }else{
