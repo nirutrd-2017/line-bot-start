@@ -87,6 +87,7 @@ else if($arrJson['events'][0]['message']['text'] == "location"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "location";
+  $arrPostData['messages'][0]['title'] = "My Location";
   $arrPostData['messages'][0]['address'] = "ราชเทวี";
   $arrPostData['messages'][0]['latitude'] = 35.65910807942215;
   $arrPostData['messages'][0]['longitude'] = 139.70372892916203;
