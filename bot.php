@@ -83,7 +83,7 @@ if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "Nirut Rodngam";
 }
-else if($arrJson['events'][0]['message']['text'] == "location"){
+else if($arrJson['events'][0]['message']['location'] == "location"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "location";
@@ -91,6 +91,24 @@ else if($arrJson['events'][0]['message']['text'] == "location"){
   $arrPostData['messages'][0]['address'] = "ราชเทวี";
   $arrPostData['messages'][0]['latitude'] = 35.65910807942215;
   $arrPostData['messages'][0]['longitude'] = 139.70372892916203;
+  
+  /*{
+  "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
+  "type": "message",
+  "timestamp": 1462629479859,
+  "source": {
+    "type": "user",
+    "userId": "U206d25c2ea6bd87c17655609a1c37cb8"
+  },
+  "message": {
+    "id": "325708",
+    "type": "location",
+    "title": "my location",
+    "address": "〒150-0002 東京都渋谷区渋谷２丁目２１−１",
+    "latitude": 35.65910807942215,
+    "longitude": 139.70372892916203
+  }
+}*/
 
   
 
