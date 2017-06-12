@@ -83,7 +83,7 @@ if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "Nirut Rodngam";
 }
-else if($arrJson['events'][0]['message']['location'] == "location"){
+else if($arrJson['events'][0]['message']['text'] == "location"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "location";
