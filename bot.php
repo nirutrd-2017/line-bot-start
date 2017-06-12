@@ -91,7 +91,7 @@ else if($arrJson['events'][0]['message']['text'] == "location"){
   $arrPostData['messages'][0]['address'] = "ราชเทวี";
   $arrPostData['messages'][0]['latitude'] = 13.752219;
   $arrPostData['messages'][0]['longitude'] = 100.531399;
-}else if($arrJson['events'][0]['message']['text'] == "bot"){
+}else if($arrJson['events'][0]['message']['text'] == "image"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "image";
